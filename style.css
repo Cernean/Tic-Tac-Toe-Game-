@@ -19,13 +19,14 @@
 h1{
     background-color: red;
     animation-name: fun;
-    animation-duration: 50s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 @keyframes fun {
     0% {background-color: red;}
     20% {background-color: yellow;}
     40% {background-color: blueviolet;}
-    60% {background-color: blue;}
+    60% {background-color: rgba(64, 158, 72, 0.712);}
     80% {background-color: gold;}
-    100% {background-color: green;}
+    100% {background-color: rgb(12, 216, 12);}
 }
