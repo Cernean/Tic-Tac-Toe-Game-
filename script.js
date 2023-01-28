@@ -12,7 +12,7 @@ const winCondition = [
     [2, 4, 6]
 ];
 
-let option = ["", "", "", "", "", "", "", "", "",];
+let options = ["", "", "", "", "", "", "", "", "",];
 let currentPlayer = "X";
 let running = false;
 
@@ -22,4 +22,12 @@ function startGame() {
     squares.forEach(square => square.addEventListener("click", squareClicked )) 
     replayBtn.addEventListener("click", replayGame);
     resultText.textContent = `${currentPlayer}'s turn`
+}
+function squareClicked(){
+    const squareIndex = this.getAttribute("squareIndex");
+    if(options[squareIndex] != "" || !running) {
+        return;
+    }
+    updateSquare(this, squareIndex);
+    checkWinner();
 }
