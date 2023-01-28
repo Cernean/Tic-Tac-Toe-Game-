@@ -16,7 +16,7 @@
 #board{
     text-align: center;
 }
-h1{
+button{
     background-color: red;
     animation-name: fun;
     animation-duration: 10s;

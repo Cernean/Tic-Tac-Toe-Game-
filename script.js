@@ -1,4 +1,4 @@
-const square = document.querySelectorAll(".square");
+const squares = document.querySelectorAll(".square");
 const resultText = document.querySelector("#resultText");
 const replayBtn = document.querySelector("#replayBtn");
 const winCondition = [
@@ -13,5 +13,13 @@ const winCondition = [
 ];
 
 let option = ["", "", "", "", "", "", "", "", "",];
-let curentPlayer = "X";
+let currentPlayer = "X";
 let running = false;
+
+startGame();
+
+function startGame() {
+    squares.forEach(square => square.addEventListener("click", squareClicked )) 
+    replayBtn.addEventListener("click", replayGame);
+    resultText.textContent = `${currentPlayer}'s turn`
+}
