@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Tic Tac Toe</title>
 </head>
 <body>
-  <div class="board" id="board">
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
+  <div id="board">
+    <h1>Tic Tac Toe</h1>
+    <div id="squareContainer">
+      <div squareIndex="0" class="square"></div>
+      <div squareIndex="1" class="square"></div>
+      <div squareIndex="2" class="square"></div>
+      <div squareIndex="3" class="square"></div>
+      <div squareIndex="4" class="square"></div>
+      <div squareIndex="5" class="square"></div>
+      <div squareIndex="6" class="square"></div>
+      <div squareIndex="7" class="square"></div>
+      <div squareIndex="8" class="square"></div>
+    </div>
+    <h2 id="resultText"></h2>
+    <button id="replayBtn">Replay</button>
   </div>
-  <div class="Winning-Message">
-    <div winning-text></div>
-    <button id="restartButton">Replay</button>
-  </div>
+  <script src="script.js" defer></script>
 </body>
 </html>
