@@ -21,7 +21,8 @@ startGame();
 function startGame() {
     squares.forEach(square => square.addEventListener("click", squareClicked )) 
     replayBtn.addEventListener("click", replayGame);
-    resultText.textContent = `${currentPlayer}'s turn`
+    resultText.textContent = `${currentPlayer}'s turn`;
+    running = true;
 }
 function squareClicked(){
     const squareIndex = this.getAttribute("squareIndex");
@@ -30,4 +31,31 @@ function squareClicked(){
     }
     updateSquare(this, squareIndex);
     checkWinner();
+}
+
+function updateSquare(square, index) {
+    options[index] = currentPlayer;
+    square.textContent = currentPlayer;
+}
+function changePlayer() {
+    currentPlayer = (currentPlayer == "X") ? "O" : "X";
+    resultText.textContent = `${currentPlayer}'s turn`;
+}
+function checkWinner(){
+    let roundWon = false;
+
+    for(let i = 0; i < winCondition.length; i++){
+        const condition = winCondition[i];
+        const squareA = options[condition[0]];
+        const squareB = options[condition[1]];
+        const squareC = options[condition[2]];
+
+        if(squareA == "" || squareB == "" || squareC == ""){
+            continue;
+        }
+        if(squareA == squareB && squareB == squareC){
+            roundWon = true;
+            break;
+        }
+    }
 }
