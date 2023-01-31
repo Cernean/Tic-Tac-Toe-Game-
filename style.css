@@ -1,20 +1,22 @@
-.square{
+.cell{
     width: 75px;
     height: 75px;
-    border: 1px solid;
-    box-shadow: 0 0 0 1px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
     line-height: 75px;
-    cursor: pointer;
     font-size: 50px;
+    cursor: pointer;
 }
-#squareContainer{
+#gameContainer{
+    font-family: sans-serif; cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+#cellContainer{
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 225px;
     margin: auto;
-}
-#board{
-    text-align: center;
 }
 button{
     background-color: red;
@@ -23,10 +25,8 @@ button{
     animation-iteration-count: infinite;
 }
 @keyframes fun {
-    0% {background-color: red;}
-    20% {background-color: yellow;}
-    40% {background-color: blueviolet;}
+
+    20% {background-color: rgb(224, 20, 54);}
     60% {background-color: rgba(64, 158, 72, 0.712);}
-    80% {background-color: gold;}
-    100% {background-color: rgb(12, 216, 12);}
+    100% {background-color: rgb(100, 35, 185);}
 }
