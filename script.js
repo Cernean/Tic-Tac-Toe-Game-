@@ -60,11 +60,11 @@ function checkWinner(){
     }
 
     if(roundWon){
-        statusText.textContent = `${currentPlayer} WINS!!!!!!`;
+        statusText.textContent = `${currentPlayer} is a winner!`;
         running = false;
     }
     else if(!options.includes("")){
-        statusText.textContent = `DRAW!`;
+        statusText.textContent = `it's a draw!`;
         running = false;
     }
     else{
