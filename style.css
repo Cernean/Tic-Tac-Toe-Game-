@@ -18,9 +18,10 @@
     grid-template-columns: repeat(3, auto);
     width: 225px;
     margin: auto;
+    justify-content: center
 }
 body{
-    background: rgb(231, 230, 230);
+    background: #8d94a5;
 }
 #restartBtn{
     width: 150px;
@@ -33,11 +34,12 @@ body{
     border: none;
 }
 h1{
-    color: blue;
+    color: whitesmoke;
+    font-size: 70px;
 }
 p{
     font-size: 40px;
 }
 span{
-    color: blue;
+    color: lightgreen;
 }
