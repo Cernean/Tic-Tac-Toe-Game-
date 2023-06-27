@@ -1,0 +1,60 @@
+.cell:hover {
+  background-color: aquamarine;
+}
+
+#restartBtn:hover {
+  background-color: green;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  box-shadow: 0 0 0 2px;
+  line-height: 100px;
+  font-size: 75px;
+  cursor: pointer;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+#gameContainer {
+  font-family: sans-serif cursive;
+  text-align: center;
+}
+
+#cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 225px;
+  margin: auto;
+  justify-content: center;
+}
+
+body {
+  background: #8d94a5;
+}
+
+#restartBtn {
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  color: white;
+  background-color: #ff4757;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+h1 {
+  color: whitesmoke;
+  font-size: 70px;
+}
+
+p {
+  font-size: 40px;
+}
+
+span {
+  color: lightgreen;
+}/*# sourceMappingURL=style.css.map */
